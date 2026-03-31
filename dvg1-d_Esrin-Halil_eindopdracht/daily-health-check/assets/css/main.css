@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: hsl(43, 38%, 82%);
+  margin: 0;
+  transition: 0.3s;
+}
+
+.game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  padding: 25px;
+}
+
+button{
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+
+}
+
+button:hover{
+  transition: scale (1.10);
+}
+
+input {
+  padding: 10px;
+  margin: 10 px;
+}
+
+.active{
+  background-color: hsl(0, 0%, 66%);
+}
+.dark{
+  background: hsl(0, 1%, 25%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 600px) {
+  .game-area {
+    padding: 10px;
+  }
+  h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  h2{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  button{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+  input{
+    width: 100%;
+    font-size: 16px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 765px) {
+  .game-area {
+    max-width: 600px;
+    margin: auto;
+  }
+}
